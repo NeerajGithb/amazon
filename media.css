@@ -1,0 +1,211 @@
+::-webkit-scrollbar {
+    width: 1px;
+    opacity: 0;
+    /* Scrollbar ko invisible banata hai */
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+    opacity: 0;
+    /* Scrollbar ke track aur thumb ko bhi invisible banata hai */
+}
+
+/* Firefox ke liye */
+* {
+    scrollbar-width: none;
+    /* Scrollbar Firefox me hata dega */
+}
+
+@media screen and (max-width: 1500px){
+    .shop-sec {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width: 1240px) {
+    .add {
+        right: -75vw;
+    }
+
+    .shop-sec {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .foot2,
+    .foot3 {
+        padding: 50px 100px;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .hero-section {
+        height: 800px;
+    }
+
+    .shop-sec {
+        margin-top: -450px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .navbar>:nth-last-child(2) {
+        display: none;
+    }
+
+    .foot3 {
+        grid-template-columns: 1fr 1fr;
+        min-height: 30vh;
+    }
+
+    .foot2 {
+        grid-template-columns: 1fr 1fr;
+        min-height: 30vh;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .navbar>:nth-child(3) {
+        display: none;
+    }
+
+    .navbar>:nth-child(5) {
+        display: none;
+    }
+
+    .nav-cart span {
+        display: none;
+    }
+
+   
+
+    .carousel-btn {
+        top: 25%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .shop-sec {
+        grid-template-columns: 1fr;
+        gap: 3px;
+    }
+
+    .foot2,
+    .foot3 {
+        grid-template-columns: 1fr;
+        min-height: 60vh;
+    }
+
+    .shop-sec>div {
+        max-width: 450px;
+        min-width: 410px;
+        margin: auto;
+    }
+
+    .navbar>:nth-child(7) {
+        display: none;
+    }
+
+    .navbar>:nth-child(4) {
+        display: none;
+    }
+
+    .search {
+        border-radius: 10px;
+        margin-top: 60px;
+        width: 100%;
+        display: block;
+    }
+
+    .toogle {
+        padding: 10px;
+        display: block;
+    }
+
+    .signIn {
+
+        display: block;
+    }
+
+    .navbar {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .navbar>:nth-child(1) {
+        position: absolute;
+        left: 0;
+    }
+
+    .navbar>:nth-child(2) {
+        position: absolute;
+        left: 60px;
+    }
+
+    .navbar>:nth-last-child(1) {
+        position: absolute;
+        right: 0px;
+    }
+
+    .navbar>:nth-last-child(4) {
+        position: absolute;
+        right: 80px;
+    }
+    .nav-content{
+        margin-top: -2px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .shop-sec>div {
+        padding: 15px;
+        max-width: 450px;
+        min-width: 350px;
+        margin: auto;
+    }
+
+    .foot2,
+    .foot3 {
+        padding: 20px;
+    }
+
+    .foot2 {
+        min-height: 90vh;
+    }
+
+    .foot2 a {
+        line-height: 20px;
+    }
+
+    .shop-sec {
+        padding: 20px 0;
+    }
+
+    .foot5 p {
+        font-size: 10px;
+    }
+
+    .logo {
+        width: 110px;
+    }
+
+    .nav-cart {
+        margin-right: 12px;
+    }
+
+    .navbar>:nth-last-child(4) {
+        position: absolute;
+        right: 60px;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+    .shop-sec>div {
+        min-width: 92%;
+    }
+}
+@media screen and (max-width: 400px){
+    .hero-section{
+        height: 300px;
+    }
+}
