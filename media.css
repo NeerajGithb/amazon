@@ -1,26 +1,23 @@
 ::-webkit-scrollbar {
     width: 1px;
     opacity: 0;
-    /* Scrollbar ko invisible banata hai */
 }
 
 ::-webkit-scrollbar-track,
 ::-webkit-scrollbar-thumb {
     opacity: 0;
-    /* Scrollbar ke track aur thumb ko bhi invisible banata hai */
 }
 
-/* Firefox ke liye */
 * {
     scrollbar-width: none;
-    /* Scrollbar Firefox me hata dega */
 }
 
-@media screen and (max-width: 1500px){
+@media screen and (max-width: 1500px) {
     .shop-sec {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
+
 @media screen and (max-width: 1240px) {
     .add {
         right: -75vw;
@@ -75,7 +72,7 @@
         display: none;
     }
 
-   
+
 
     .carousel-btn {
         top: 25%;
@@ -86,6 +83,14 @@
     .shop-sec {
         grid-template-columns: 1fr;
         gap: 3px;
+    }
+
+    .nav-content>:nth-child(1) {
+        display: none;
+    }
+
+    .nav-content {
+        padding-left: 0;
     }
 
     .foot2,
@@ -110,24 +115,34 @@
 
     .search {
         border-radius: 10px;
-        margin-top: 60px;
+        margin-top: 49.5px;
         width: 100%;
         display: block;
     }
 
     .toogle {
-        padding: 10px;
+        padding: 10px 10px 10px 5px;
         display: block;
     }
 
     .signIn {
-
         display: block;
     }
 
     .navbar {
         padding-left: 0;
         padding-right: 0;
+        background-color: #1f2a37;
+        max-height: 50px;
+    }
+
+    .nav-search {
+        background-color: #1f2a37;
+
+    }
+
+    .nav-content {
+        background-color: #1f2a37
     }
 
     .navbar>:nth-child(1) {
@@ -137,7 +152,8 @@
 
     .navbar>:nth-child(2) {
         position: absolute;
-        left: 60px;
+        left: 30px;
+        top: -2px;
     }
 
     .navbar>:nth-last-child(1) {
@@ -149,8 +165,50 @@
         position: absolute;
         right: 80px;
     }
-    .nav-content{
-        margin-top: -2px;
+
+    .nav-content {
+        margin-top: -2.2px;
+
+    }
+
+    .search-input {
+        min-height: 36px;
+    }
+
+    .nav-content>div {
+        padding: 10px 15px;
+    }
+
+    .grid>div {
+        border-radius: 4px;
+    }
+
+    .boxsecond {
+        border-radius: 5px;
+    }
+
+    .nav-search>:nth-child(1) {
+        display: none;
+    }
+
+    .nav-search>:nth-child(3) {
+        margin-right: 10px;
+    }
+
+    .search-input {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    .nav-search>:nth-child(2) {
+        margin-left: 10px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    .search-icon {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
     }
 }
 
@@ -201,11 +259,13 @@
 
 @media screen and (max-width: 500px) {
     .shop-sec>div {
-        min-width: 92%;
+        min-width: 95%;
+        padding: 8px;
     }
 }
-@media screen and (max-width: 400px){
-    .hero-section{
+
+@media screen and (max-width: 400px) {
+    .hero-section {
         height: 300px;
     }
 }

@@ -2,9 +2,13 @@
 const carouselImages = document.querySelector(".carousel-images");
 const leftBtn = document.querySelector(".left-btn");
 const rightBtn = document.querySelector(".right-btn");
-
+const slide=document.querySelector(".slide");
+const toogle=document.querySelector(".toogle");
 let currentIndex = 0; // Keep track of the current slide
 const totalImages = document.querySelectorAll(".carousel-images img").length;
+const close=document.querySelector(".close");
+const fix=document.querySelector("#fix");
+const body=document.querySelector("body");
 
 // Function to update the carousel position
 function updateCarousel() {
@@ -44,3 +48,27 @@ function resetAutoSlide() {
   clearInterval(slideInterval); // Clear the existing timer
   slideInterval = setInterval(autoSlide, 5000); // Restart the timer with a fresh interval
 }
+
+toogle.addEventListener("click", () => {
+  slide.classList.toggle("active");
+  fix.style.zIndex="999";
+  fix.style.opacity="1";
+  close.style.opacity="1";
+  body.style.overflowY="hidden";
+
+})
+
+close.addEventListener("click", closeSlider);
+function closeSlider() {
+  slide.classList.remove("active");
+  fix.style.zIndex = "-999";
+  fix.style.opacity = "0";
+  close.style.opacity = "0";
+  body.style.overflowY = "scroll";
+}
+
+document.addEventListener("click", (event) => {
+  if (slide.classList.contains("active") && !slide.contains(event.target) && !toogle.contains(event.target)) {
+    closeSlider();
+  }
+});
