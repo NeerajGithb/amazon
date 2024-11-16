@@ -307,6 +307,7 @@ body {
 
 #fix {
   position: fixed;
+  display: none;
   z-index: 0;
   top: 0;
   left: 0;
@@ -377,8 +378,9 @@ body {
 
 .first i {
   color: white;
-  z-index: 10000;
+  display: none;
   position: fixed;
+  z-index: 10000;
   top: 40px;
   right: 29px;
   border: 2px solid white;
